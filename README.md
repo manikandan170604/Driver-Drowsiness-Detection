@@ -98,10 +98,9 @@ Includes:
 
 The project follows corrective, adaptive, perfective, preventive, and evaluative maintenance practices to ensure functionality, scalability, and relevance.
 
-## 👨‍💻 Contributors
+## 👨‍💻 Contributor
 
 - **K. Manikandan** - [21UL81]
-- **K. Sriram** - [21UL93]
 
 Final Year BCA Students  
 Ayya Nadar Janaki Ammal College (Autonomous), Sivakasi
