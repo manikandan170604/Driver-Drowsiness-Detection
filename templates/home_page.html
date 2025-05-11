@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Drowsiness Detection</title>
+<style>
+    
+.heading{
+        text-align: center;
+        font-size: x-large;
+        font-family: 'Courier New', Courier, monospace;
+        /* padding-top: 1px; */
+        color: orchid;
+        font-weight: bolder;
+        font-size: 50px;
+    }
+.btn {
+       background-color: lightcoral;
+        border: none;
+        color: white;
+        padding: 15px 32px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 35px;
+        margin: 4px 2px;
+        font-family:'Times New Roman', Times, serif;
+}
+
+
+    #btn:hover{
+        color:darkturquoise;
+        background-color: white;
+    }
+
+    .watermark {
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-attachment: fixed;
+    width: 100%;
+    height: 100%;
+    pointer-events: none; /* Ensures that clicks and pointer events do not interact with the watermark */
+}
+
+.watermark img {
+    opacity: 0.3; /* Adjust the opacity to control the visibility of the watermark */
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    height: 100%;
+    overflow:visible; /* Adjust the position of the watermark */
+    z-index: -1; /* Make sure the watermark stays behind the content */
+}
+.para li{
+    margin-left: 2em;
+    justify-content: left;
+    font-size: 30px;
+    line-height: 54px;
+    word-spacing: 5px;
+    text-indent: 5px;
+    color:rgb(211, 109, 14);
+    font-family: 'Times New Roman', Times, serif;
+}
+
+#mark{
+    color:teal;
+}
+</style>
+</head>
+<body>
+    <center><h1  class="heading">Driver Drowsiness Detection </h1></center>
+    
+    <div class="para">
+        <ul>
+            <li>In this project, we will be making a <span id="mark">Drowsiness Detection System.</span></li>
+            <li>Drivers and people's travelling long distance so, it suffer from lack of sleep.</li>
+            <li>So prevent these accidents we will builded a system using <span id="mark"> python, OpenCV, Imutils, Pygame</span> which will alert the driver when he feels sleepy.</li>
+            <li>This technology prevent accidents that are caused by drivers who fell asleep while driving.</li>
+            <li>The Objective of this intermidiate python project is to build a Drowsiness Detection System that will detect that a person's eyes are closed.</li>
+            <li>This system will alert the driver where drowsiness is detected.</li>
+        </ul>
+    </div>
+    
+    <center><a href="display" class="btn" id="btn">Click to Detect</a></center>
+    <div class="watermark">
+        <img src="{{ url_for('static', filename='images/drowsiness.jpg') }}" alt="drowsiness image">
+    </div>
+<br>
+</body>
+</form>
+</html>
